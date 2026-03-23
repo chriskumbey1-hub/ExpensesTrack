@@ -381,15 +381,17 @@ import { getFirestore, collection, doc, setDoc, deleteDoc, getDocs, onSnapshot, 
 import { Chart, registerables } from "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/+esm";
 Chart.register(...registerables);
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCn5J1qylPRcdVuTK57HVJfZhJEEC6fgaM",
-  authDomain: "kobby-fa.firebaseapp.com",
-  projectId: "kobby-fa",
-  storageBucket: "kobby-fa.firebasestorage.app",
-  messagingSenderId: "885988227738",
-  appId: "1:885988227738:web:c77c6f7d2fa9f12653bd23",
-  measurementId: "G-KYWX4G2FSQ"
+  apiKey: "AIzaSyBdOKNmu51j-HFvSQfqD4hUPxbsjac5-0k",
+  authDomain: "expensestrack-38095.firebaseapp.com",
+  projectId: "expensestrack-38095",
+  storageBucket: "expensestrack-38095.firebasestorage.app",
+  messagingSenderId: "654780488648",
+  appId: "1:654780488648:web:da6dbf39a74da7c6c37efd",
+  measurementId: "G-JM87CSM5RJ"
 };
+  
 const app = initializeApp(firebaseConfig);
 const db  = getFirestore(app);
 
